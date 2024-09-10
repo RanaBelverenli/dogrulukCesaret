@@ -9,5 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="backgroundLila">#B4A7E0</color>
     <color name="backgroundPembe">#EF96BA</color>
+    <color name="buttonoyunaBasla">#DF778D</color>
+    <color name="buttonAyarlar">#26A7C3</color>
 
 </resources>

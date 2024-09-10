@@ -13,6 +13,26 @@
         android:theme="@style/Theme.DogrulukCesaret"
         tools:targetApi="31">
         <activity
+            android:name=".SplashActivity"
+            android:exported="false"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/Theme.DogrulukCesaret" />
+        <activity
+            android:name=".StartGamePage"
+            android:exported="false"
+            android:label="@string/title_activity_start_game_page"
+            android:theme="@style/Theme.DogrulukCesaret" />
+        <activity
+            android:name=".QuestionsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_questions"
+            android:theme="@style/Theme.DogrulukCesaret" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Theme.DogrulukCesaret" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

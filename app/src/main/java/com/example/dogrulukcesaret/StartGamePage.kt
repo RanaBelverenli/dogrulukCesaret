@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.dogrulukcesaret.ui.theme.DogrulukCesaretTheme
 
-class SettingsActivity : ComponentActivity() {
+class StartGamePage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -22,7 +22,7 @@ class SettingsActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting3("Android")
+                    Greeting5("Android")
                 }
             }
         }
@@ -30,7 +30,7 @@ class SettingsActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting3(name: String, modifier: Modifier = Modifier) {
+fun Greeting5(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
@@ -39,8 +39,8 @@ fun Greeting3(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview3() {
+fun GreetingPreview5() {
     DogrulukCesaretTheme {
-        Greeting3("Android")
+        Greeting5("Android")
     }
 }
