@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarDefaultDelayBeforeFade="400"
+    android:scrollbarFadeDuration="250"
+    android:scrollbarSize="4dp">
+
+    <!-- arkadaki pembe renkli resmi eklemek için  -->
+
+    <ImageView
+        android:id="@+id/imageBackgorund"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kategoriler"
+        android:layout_width="251dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="serif"
+        android:text="    Kategoriler"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBackgorund"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/buttonBack2"
+        app:layout_constraintTop_toTopOf="@+id/imageBackgorund"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <ImageButton
+        android:id="@+id/buttonBack2"
+        android:layout_width="67dp"
+        android:layout_height="65dp"
+        android:background="@color/black"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="Ekle Butonu"
+        android:scaleType="centerInside"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="@+id/imageBackgorund"
+        app:layout_constraintTop_toTopOf="@+id/imageBackgorund" />
+
+    <TextView
+        android:id="@+id/kategori"
+        android:layout_width="151dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="96dp"
+        android:fontFamily="serif"
+        android:text=" Kategori"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonBack2" />
+
+    <TextView
+        android:id="@+id/seçiniz"
+        android:layout_width="151dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+
+        android:layout_marginTop="148dp"
+        android:layout_marginBottom="42dp"
+        android:fontFamily="serif"
+        android:text="seçiniz"
+        android:textColor="#D6C7FF"
+        android:textColorHint="#D6C7FF"
+        android:textSize="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/kategori"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="1dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seçiniz">  <!-- Butonları ortalayabilir -->
+
+        <Button
+            android:id="@+id/buttonKlasik"
+            android:layout_width="197dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button_oyuna_basla_background"
+            android:text="      KLASİK      "
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonEglenceli"
+            android:layout_width="197dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button_oyuna_basla_background"
+            android:text="      EĞLENCELİ      "
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/ButtonPartner"
+            android:layout_width="197dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button_oyuna_basla_background"
+            android:text="      PARTNER      "
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonZor"
+            android:layout_width="197dp"
+            android:layout_height="51dp"
+            android:background="@drawable/button_oyuna_basla_background"
+            android:text="      ZOR      "
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <!-- Köşe yuvarlatma -->
+    app:cardElevation="4dp"        <!-- Gölge ve derinlik efekti -->
+    android:layout_margin="16dp"
+    android:padding="16dp"
+    android:backgroundTint="@color/transparent"  <!-- Arka plan rengi -->
+    app:cardBackgroundColor="@android:color/transparent" >
+</androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
